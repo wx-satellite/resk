@@ -7,14 +7,15 @@ require (
 	github.com/go-sql-driver/mysql v1.4.1
 	github.com/segmentio/ksuid v1.0.2
 	github.com/shopspring/decimal v0.0.0-20180709203117-cd690d0c9e24
-	github.com/sirupsen/logrus v1.6.0 // indirect
+	github.com/sirupsen/logrus v1.6.0
 	github.com/smartystreets/goconvey v0.0.0-20190330032615-68dc04aab96a
 	github.com/tietang/dbx v1.0.0
 	github.com/tietang/go-utils v0.1.3 // indirect
-	github.com/tietang/props v2.2.0+incompatible // indirect
+	github.com/tietang/props v2.2.0+incompatible
 	github.com/valyala/fasttemplate v1.2.1 // indirect
 	golang.org/x/sys v0.0.0-20200817155316-9781c653f443 // indirect
 	google.golang.org/appengine v1.6.6 // indirect
+	gopkg.in/ini.v1 v1.60.0 // indirect
 )
 
 replace (
