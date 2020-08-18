@@ -3,16 +3,18 @@ module resk
 go 1.12
 
 require (
+	github.com/go-ini/ini v1.60.0 // indirect
 	github.com/go-sql-driver/mysql v1.4.1
 	github.com/segmentio/ksuid v1.0.2
 	github.com/shopspring/decimal v0.0.0-20180709203117-cd690d0c9e24
+	github.com/sirupsen/logrus v1.6.0 // indirect
 	github.com/smartystreets/goconvey v0.0.0-20190330032615-68dc04aab96a
 	github.com/tietang/dbx v1.0.0
-	golang.org/x/crypto v0.0.0-20190308221718-c2843e01d9a2
-	golang.org/x/net v0.0.0-20190311183353-d8887717615a
-	golang.org/x/sys v0.0.0-20190403152447-81d4e9dc473e
-	golang.org/x/text v0.3.0
-	golang.org/x/tools v0.0.0-20190328211700-ab21143f2384
+	github.com/tietang/go-utils v0.1.3 // indirect
+	github.com/tietang/props v2.2.0+incompatible // indirect
+	github.com/valyala/fasttemplate v1.2.1 // indirect
+	golang.org/x/sys v0.0.0-20200817155316-9781c653f443 // indirect
+	google.golang.org/appengine v1.6.6 // indirect
 )
 
 replace (

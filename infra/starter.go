@@ -1,7 +1,18 @@
 package infra
 
+import "github.com/tietang/props/kvs"
+
+const PropsKey = "props"
 // 基础资源上下文结构体
 type StarterContext map[string]interface{}
+
+func (s StarterContext) Props() kvs.ConfigSource {
+	p := s[PropsKey]
+	if nil == p {
+		panic("配置文件未初始化~")
+	}
+	return p.(kvs.ConfigSource)
+}
 
 // 基础资源启动器接口
 type Starter interface {
@@ -43,25 +54,10 @@ func (r *starterRegister) AllStarters() []Starter {
 	return r.starters
 }
 
-var StarterRegister *starterRegister = new(starterRegister)
+var StarterRegister  = new(starterRegister)
 
 func Register(s Starter) {
 	StarterRegister.Register(s)
 }
 
-//系统基础资源的启动管理
-func SystemRun() {
-	// 1. 初始化
-	ctx := StarterContext{}
-	for _, starter := range StarterRegister.AllStarters() {
-		starter.Init(ctx)
-	}
-	// 2. 安装
-	for _, starter := range StarterRegister.AllStarters() {
-		starter.Setup(ctx)
-	}
-	// 3. 启动
-	for _, starter := range StarterRegister.AllStarters() {
-		starter.Start(ctx)
-	}
-}
+
