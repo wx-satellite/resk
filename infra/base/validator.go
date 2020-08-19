@@ -1,7 +1,6 @@
 package base
 
 import (
-	"fmt"
 	"github.com/go-playground/locales/zh"
 	ut "github.com/go-playground/universal-translator"
 	"github.com/sirupsen/logrus"
