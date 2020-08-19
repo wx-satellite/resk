@@ -4,7 +4,15 @@ go 1.12
 
 require (
 	github.com/go-ini/ini v1.60.0 // indirect
+	github.com/go-playground/locales v0.13.0
+	github.com/go-playground/universal-translator v0.17.0
 	github.com/go-sql-driver/mysql v1.4.1
+	github.com/leodido/go-urn v1.2.0 // indirect
+	github.com/lestrrat-go/file-rotatelogs v2.3.0+incompatible
+	github.com/lestrrat-go/strftime v1.0.3 // indirect
+	github.com/mattn/go-colorable v0.1.7 // indirect
+	github.com/mgutz/ansi v0.0.0-20200706080929-d51e80ef957d // indirect
+	github.com/pkg/errors v0.9.1 // indirect
 	github.com/segmentio/ksuid v1.0.2
 	github.com/shopspring/decimal v0.0.0-20180709203117-cd690d0c9e24
 	github.com/sirupsen/logrus v1.6.0
@@ -13,8 +21,10 @@ require (
 	github.com/tietang/go-utils v0.1.3 // indirect
 	github.com/tietang/props v2.2.0+incompatible
 	github.com/valyala/fasttemplate v1.2.1 // indirect
+	github.com/x-cray/logrus-prefixed-formatter v0.5.2
 	golang.org/x/sys v0.0.0-20200817155316-9781c653f443 // indirect
 	google.golang.org/appengine v1.6.6 // indirect
+	gopkg.in/go-playground/validator.v9 v9.31.0
 	gopkg.in/ini.v1 v1.60.0 // indirect
 )
 
