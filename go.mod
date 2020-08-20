@@ -20,7 +20,7 @@ require (
 	github.com/onsi/ginkgo v1.14.0 // indirect
 	github.com/segmentio/ksuid v1.0.2
 	github.com/sergi/go-diff v1.1.0 // indirect
-	github.com/shopspring/decimal v0.0.0-20180709203117-cd690d0c9e24
+	github.com/shopspring/decimal v1.2.0
 	github.com/shurcooL/sanitized_anchor_name v1.0.0 // indirect
 	github.com/sirupsen/logrus v1.6.0
 	github.com/smartystreets/goconvey v0.0.0-20190330032615-68dc04aab96a
