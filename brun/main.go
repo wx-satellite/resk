@@ -9,7 +9,6 @@ import (
 )
 
 func main() {
-
 	configPath := kvs.GetCurrentFilePath("config.ini", 1)
 
 	conf := ini.NewIniFileConfigSource(configPath)

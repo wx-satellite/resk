@@ -8,7 +8,6 @@ import (
 )
 
 // 数据库访问层
-
 type AccountDao struct {
 	runner *dbx.TxRunner
 }

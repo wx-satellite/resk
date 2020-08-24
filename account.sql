@@ -20,8 +20,8 @@ SET FOREIGN_KEY_CHECKS = 0;
 -- ----------------------------
 --  Table structure for `account_logs`
 -- ----------------------------
-DROP TABLE IF EXISTS `account_logs`;
-CREATE TABLE `account_logs` (
+DROP TABLE IF EXISTS `account_log`;
+CREATE TABLE `account_log` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `trade_no` varchar(32) DEFAULT '' COMMENT '交易单号，全局唯一',
   `log_no` varchar(32) DEFAULT '' COMMENT '流水编号，全局唯一',
@@ -45,8 +45,8 @@ CREATE TABLE `account_logs` (
 -- ----------------------------
 --  Table structure for `accounts`
 -- ----------------------------
-DROP TABLE IF EXISTS `accounts`;
-CREATE TABLE `accounts` (
+DROP TABLE IF EXISTS `account`;
+CREATE TABLE `account` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `account_no` varchar(32) DEFAULT '' COMMENT '账户编号，账户唯一标识',
   `account_name` varchar(64) DEFAULT '' COMMENT '账户名称',

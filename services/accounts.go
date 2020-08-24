@@ -1,6 +1,9 @@
 package services
 
-import "time"
+import (
+	"github.com/shopspring/decimal"
+	"time"
+)
 
 type AccountService interface {
 	// 账户创建
@@ -20,14 +23,16 @@ type AccountCreateDTO struct {
 	AccountType  int
 	AccountName  string
 	CurrencyCode string
-	Amount       string // 浮点数会进度丢失，使用字符串传递
+	Balance      decimal.Decimal // 浮点数会进度丢失，使用字符串传递
+	Status       int
 }
 
 // 账户信息
 type AccountDTO struct {
 	AccountCreateDTO
 	AccountNo string
-	CreatedAt time.Time
+	CreatedAt *time.Time
+	UpdatedAt *time.Time
 }
 
 // 账户交易的参与者
