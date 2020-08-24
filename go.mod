@@ -23,7 +23,7 @@ require (
 	github.com/shopspring/decimal v1.2.0
 	github.com/shurcooL/sanitized_anchor_name v1.0.0 // indirect
 	github.com/sirupsen/logrus v1.6.0
-	github.com/smartystreets/goconvey v0.0.0-20190330032615-68dc04aab96a
+	github.com/smartystreets/goconvey v1.6.4
 	github.com/tietang/dbx v1.0.0
 	github.com/tietang/go-utils v0.1.3 // indirect
 	github.com/tietang/props v2.2.0+incompatible

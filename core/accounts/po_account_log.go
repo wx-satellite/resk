@@ -22,5 +22,5 @@ type AccountLog struct {
 	ChangeFlag      services.ChangeFlag `db:"change_flag"`
 	Status          int                 `db:"status"`
 	Desc            string              `db:"desc"`
-	CreatedAt       time.Time           `db:"created_at,omitempty"`
+	CreatedAt       *time.Time          `db:"created_at,omitempty"`
 }

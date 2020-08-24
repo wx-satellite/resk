@@ -10,7 +10,7 @@ import (
 // 数据库访问层
 
 type AccountDao struct {
-	runner *dbx.Runner
+	runner *dbx.TxRunner
 }
 
 // 查询数据库持久化对象的单实例

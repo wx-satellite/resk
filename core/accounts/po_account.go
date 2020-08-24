@@ -18,6 +18,6 @@ type Account struct {
 	Username     sql.NullString  `db:"username"`
 	Balance      decimal.Decimal `db:"balance"`
 	Status       int             `db:"status"`
-	CreatedAt    time.Time       `db:"created_at,omitempty"`
-	UpdatedAt    time.Time       `db:"updated_at,omitempty"`
+	CreatedAt    *time.Time      `db:"created_at,omitempty"`
+	UpdatedAt    *time.Time      `db:"updated_at,omitempty"`
 }

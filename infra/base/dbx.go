@@ -14,6 +14,10 @@ func DbxDatabase() *dbx.Database {
 	return database
 }
 
+func Tx(f func(runner *dbx.TxRunner) error) error {
+	return database.Tx(f)
+}
+
 type DbxDatabaseStarter struct {
 	infra.BaseStarter
 }
